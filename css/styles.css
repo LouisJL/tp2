@@ -1,0 +1,234 @@
+/* CSS pour l'index */
+
+#background{
+    background-color: lightsteelblue;
+}
+
+#h1Index{
+    text-align: center;
+}
+
+.cssIndex{
+    border: solid black 3px;
+    border-collapse: collapse;
+    text-align: left;
+    margin: auto;
+    width: 200px;
+    height: 150px;
+}
+
+.ligneTableau{
+    border: solid black 3px;
+    padding: 10px;
+    background-color:whitesmoke;
+}
+
+.texteNoir{
+    color: black;
+}
+
+/* CSS pour l'index */
+
+
+body{
+    font-family: Verdana, Tahoma, sans-serif;
+    height: 100vh;
+    width: 100vw;
+}
+
+main{
+        display: grid;
+        grid-template-areas: 
+        "header header header"
+        "nav nav nav"
+        "article article aside"
+        "article article aside"
+        "footer footer footer";
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+a:hover{
+    color: blue;
+}
+
+header{
+    grid-area: header;
+}
+
+nav{
+    grid-area: nav;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: black;
+    color: white;
+    height: 75px;
+    font-size: 1.5em;
+    padding: 15px;
+}
+
+#navBarGauche{
+    display: inline-block;
+}
+
+#navBarDroite{
+    display: inline-block;
+    padding-left: 13em;
+}
+
+
+.navSpan{
+    padding: 5px;
+}
+
+
+article{
+    grid-area: article;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+aside{
+    padding: 10px;
+    background-color: rgb(2, 190, 190);
+}
+
+
+.sectionTitre{
+    padding-left: 5px;
+    padding-top: 5px;
+    font-weight: bold;
+    font-size: 1.1em;
+
+}
+
+.listeAside{
+    font-weight: bold;
+}
+
+li{
+    padding: 8px;
+}
+
+#gridFigure{
+    display: grid;
+    grid-template-areas: 
+    "figure div4";
+    grid-template-columns: 1fr 2fr;
+}
+
+.paddingAdditionnel{
+    padding-left: 10px;
+}
+
+
+#textAlign{
+    grid-area: div4;
+    text-align: left;
+    padding-right: 10px;
+}
+
+figure{
+    background-color: white;
+    border: solid black 1px;
+    padding: 10px;
+    width: fit-content;
+    float: left;
+}
+
+#imgFallout{
+    background-image: url(../images/fallout.jpg);
+    background-repeat: no-repeat;
+    width: 375px;
+    height: 262px;
+    margin: auto;
+}
+
+/* Truc pour Wow*/
+
+#gridFigureWow{
+    display: grid;
+    grid-template-areas: 
+    "figure div4";
+    grid-template-columns: 2fr 2fr;
+}
+
+#imgWow{
+    content: url(../images/wow.jpg);
+    height: 90%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.asideWow{
+    padding: 10px;
+    background-color: rgb(255, 212, 120);
+}
+
+/* truc pour Wow */
+
+footer{
+    grid-area: footer;
+    background-color: gray;
+    font-weight: bold;
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-bottom: 50px;
+    text-align: right;
+}
+
+figure{
+    grid-area: figure;
+}
+
+
+/* CSS POUR LA SECTION KB2 */
+
+.mainCSS{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    padding: 10px;
+}
+
+.galleryHeader{
+    font-size: 2em;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    font-weight: bold;
+}
+
+.gallery{
+    margin: 5px;
+    float: left;
+    max-width: 280px;
+    max-height: 200px;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+.divOpacity:hover {
+    opacity: 70%;
+}
+
+.sectionLesson{
+    background-color: white;
+    font-size: 0.8em;
+    padding: 5px;
+    border: solid black 5px;
+}
+
+.divBorderRond{
+    border-radius: 50px;
+    border: ridge yellow 3px;
+}
+
+.backgroundGallery{
+    background: linear-gradient(to top, #34ff3e 25%, #589bff 50%, #bb2caf 75%, #c7052f 100%);
+}
