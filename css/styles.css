@@ -231,4 +231,5 @@ div.gallery img {
 
 .backgroundGallery{
     background: linear-gradient(to top, #34ff3e 25%, #589bff 50%, #bb2caf 75%, #c7052f 100%);
+    background-size: 100% 100%;  
 }
